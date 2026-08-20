@@ -9,7 +9,7 @@ export const Skills = ({ skills, specialties }: SkillsProps) => {
   return (
     <section
       id="skills"
-      className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-10 p-[72px]"
+      className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-10 p-6 md:p-[72px]"
       aria-labelledby="skills-heading"
     >
       <div className="flex flex-col items-start gap-10">

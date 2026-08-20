@@ -63,7 +63,7 @@ export const ExperienceEducation = ({
   educations,
 }: ExperienceEducationProps) => {
   return (
-    <div className="mx-auto grid w-full max-w-[1200px] grid-cols-1 gap-[72px] p-[72px] lg:grid-cols-2">
+    <div className="mx-auto grid w-full max-w-[1200px] grid-cols-1 gap-10 p-6 md:gap-[72px] md:p-[72px] lg:grid-cols-2">
       <TimelineList
         items={experiences}
         title="Experience"

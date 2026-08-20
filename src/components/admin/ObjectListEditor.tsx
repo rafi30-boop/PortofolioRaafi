@@ -66,7 +66,7 @@ export const ObjectListEditor = ({
 
   return (
     <div className="flex flex-col gap-3">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-3">
         <span className="font-body-14px-medium text-neutral-60">{label}</span>
         <button
           type="button"
@@ -82,7 +82,7 @@ export const ObjectListEditor = ({
           key={index}
           className="rounded-2xl border border-neutral-20 bg-neutral-10"
         >
-          <div className="flex items-center justify-between gap-3 px-4 py-3">
+          <div className="flex flex-wrap items-center justify-between gap-3 px-4 py-3">
             <button
               type="button"
               className="flex-1 truncate text-left font-body-16px-semibold text-neutral-100"

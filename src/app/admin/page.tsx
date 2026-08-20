@@ -207,8 +207,8 @@ export default function AdminPage() {
 
   if (authState === "guest") {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-neutral-10 px-6">
-        <div className="w-full max-w-[420px] rounded-3xl border border-neutral-20 bg-white p-10">
+      <div className="flex min-h-screen items-center justify-center bg-neutral-10 px-4 py-10">
+        <div className="w-full max-w-[420px] rounded-3xl border border-neutral-20 bg-white p-6 md:p-10">
           <h1 className="font-heading-desktop-h5 text-neutral-100">Admin</h1>
           <p className="mt-2 font-body-16px-regular text-neutral-60">
             Masukkan password untuk mengelola konten portfolio.
@@ -253,22 +253,25 @@ export default function AdminPage() {
   }
 
   return (
-    <div className="flex min-h-screen bg-neutral-10">
-      <aside className="flex w-full max-w-[260px] shrink-0 flex-col border-r border-neutral-20 bg-white">
+    <div className="flex min-h-screen flex-col bg-neutral-10 md:flex-row">
+      <aside className="flex w-full shrink-0 flex-col border-b border-neutral-20 bg-white md:w-[260px] md:border-b-0 md:border-r">
         <div className="border-b border-neutral-20 px-6 py-5">
           <h1 className="font-heading-desktop-h6 text-neutral-100">Admin</h1>
           <p className="font-body-14px-medium text-neutral-50">
             Kelola konten portfolio
           </p>
         </div>
-        <nav className="flex flex-col gap-1 p-4" aria-label="Admin sections">
+        <nav
+          className="flex flex-row gap-1 overflow-x-auto p-3 md:flex-col md:overflow-x-visible md:p-4"
+          aria-label="Admin sections"
+        >
           {TABS.map((tab) => (
             <button
               key={tab.id}
               type="button"
               onClick={() => setActiveTab(tab.id)}
               aria-current={activeTab === tab.id ? "page" : undefined}
-              className={`rounded-xl px-4 py-2.5 text-left font-body-16px-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-100 ${
+              className={`shrink-0 whitespace-nowrap rounded-xl px-4 py-2.5 text-left font-body-16px-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-100 ${
                 activeTab === tab.id
                   ? "bg-neutral-100 text-white"
                   : "text-neutral-60 hover:bg-neutral-10 hover:text-neutral-100"
@@ -278,27 +281,27 @@ export default function AdminPage() {
             </button>
           ))}
         </nav>
-        <div className="mt-auto flex flex-col gap-2 border-t border-neutral-20 p-4">
+        <div className="mt-auto flex flex-row gap-2 border-t border-neutral-20 p-4 md:flex-col">
           <a
             href="/"
             target="_blank"
             rel="noreferrer"
-            className="rounded-xl border border-neutral-20 px-4 py-2.5 text-center font-body-16px-semibold text-neutral-100 transition-colors hover:border-neutral-100"
+            className="flex-1 rounded-xl border border-neutral-20 px-4 py-2.5 text-center font-body-16px-semibold text-neutral-100 transition-colors hover:border-neutral-100 md:w-full"
           >
             Lihat situs
           </a>
           <button
             type="button"
             onClick={handleLogout}
-            className="rounded-xl px-4 py-2.5 text-center font-body-16px-medium text-neutral-50 transition-colors hover:text-red-600"
+            className="flex-1 rounded-xl px-4 py-2.5 text-center font-body-16px-medium text-neutral-50 transition-colors hover:text-red-600 md:w-full"
           >
             Logout
           </button>
         </div>
       </aside>
 
-      <main className="flex-1 overflow-y-auto px-8 py-8">
-        <div className="sticky top-0 z-10 -mx-8 mb-8 flex items-center justify-between border-b border-neutral-20 bg-neutral-10/90 px-8 py-4 backdrop-blur-sm">
+      <main className="flex-1 overflow-y-auto px-4 py-6 md:px-8 md:py-8">
+        <div className="sticky top-0 z-10 -mx-4 mb-8 flex flex-wrap items-center justify-between gap-3 border-b border-neutral-20 bg-neutral-10/90 px-4 py-4 backdrop-blur-sm md:-mx-8 md:px-8">
           <h2 className="font-heading-desktop-h5 text-neutral-100">
             {TABS.find((tab) => tab.id === activeTab)?.label}
           </h2>

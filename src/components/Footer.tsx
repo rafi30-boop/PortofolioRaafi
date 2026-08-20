@@ -35,8 +35,8 @@ export const Footer = ({ site }: FooterProps) => {
   };
 
   return (
-    <footer className="flex w-full flex-col items-center gap-[72px] bg-neutral-100 px-[72px] pb-12 pt-[72px]">
-      <div className="flex w-full max-w-[1200px] flex-col items-center gap-[72px]">
+    <footer className="flex w-full flex-col items-center gap-10 bg-neutral-100 px-6 pb-12 pt-10 md:gap-[72px] md:px-[72px] md:pt-[72px]">
+      <div className="flex w-full max-w-[1200px] flex-col items-center gap-10 md:gap-[72px]">
         <section
           className="flex w-full max-w-[1056px] flex-col items-start gap-16"
           aria-label="Footer introduction and social links"
@@ -47,7 +47,7 @@ export const Footer = ({ site }: FooterProps) => {
               aria-label="Back to top"
               className="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-0"
             >
-              <Logo className="h-12 w-[240px]" color="#ffffff" />
+              <Logo className="h-10 w-[200px] md:h-12 md:w-[240px]" color="#ffffff" />
             </a>
             <p className="w-full max-w-[1056px] font-body-22px-regular text-neutral-40">
               {site.headline}

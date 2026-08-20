@@ -11,7 +11,7 @@ export const Certificates = ({ certificates }: CertificatesProps) => {
   return (
     <section
       id="certificates"
-      className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-10 p-[72px]"
+      className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-10 p-6 md:p-[72px]"
       aria-labelledby="certificates-heading"
     >
       <header className="flex w-full max-w-[1056px] flex-wrap items-center justify-between gap-6">

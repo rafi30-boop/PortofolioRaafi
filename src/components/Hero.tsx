@@ -10,7 +10,7 @@ export const Hero = ({ site }: HeroProps) => {
     <section
       id="top"
       aria-labelledby="portfolio-hero-heading"
-      className="relative mx-auto flex w-full max-w-[1200px] flex-col items-start gap-16 p-[72px]"
+      className="relative mx-auto flex w-full max-w-[1200px] flex-col items-start gap-10 p-6 md:gap-16 md:p-[72px]"
     >
       <div className="flex flex-col items-start gap-14 self-stretch w-full flex-[0_0_auto]">
         <header className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
@@ -40,7 +40,7 @@ export const Hero = ({ site }: HeroProps) => {
           <div className="flex flex-col items-start gap-8">
             <a
               href="#contact"
-              className="group inline-flex w-fit items-center justify-center gap-3 rounded-[100px] bg-neutral-100 px-12 py-6 transition-all hover:scale-[1.02] hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-100"
+              className="group inline-flex w-fit items-center justify-center gap-3 rounded-[100px] bg-neutral-100 px-8 py-5 transition-all hover:scale-[1.02] hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-100 md:px-12 md:py-6"
             >
               <span className="whitespace-nowrap font-body-22px-semibold text-white">
                 Let&apos;s Talk

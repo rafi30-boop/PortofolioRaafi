@@ -76,10 +76,10 @@ export const Contact = ({ site }: ContactProps) => {
   return (
     <section
       id="contact"
-      className="mx-auto flex w-full max-w-[1200px] flex-col items-center gap-[72px] border-t border-neutral-20 p-[72px]"
+      className="mx-auto flex w-full max-w-[1200px] flex-col items-center gap-10 border-t border-neutral-20 p-6 md:gap-[72px] md:p-[72px]"
       aria-labelledby="contact-call-to-action-heading"
     >
-      <div className="flex w-full flex-col items-center gap-[72px]">
+      <div className="flex w-full flex-col items-center gap-10 md:gap-[72px]">
         <div className="flex w-full max-w-[1056px] flex-col items-center gap-6 px-6 md:px-[136px]">
           <p className="mt-[-1px] w-full max-w-[518px] text-center font-body-28px-medium text-neutral-90">
             Have an idea?

@@ -10,10 +10,10 @@ export const About = ({ site, specialties }: AboutProps) => {
   return (
     <section
       id="about"
-      className="mx-auto flex w-full max-w-[1200px] items-end gap-[72px] p-[72px]"
+      className="mx-auto flex w-full max-w-[1200px] items-start gap-10 p-6 md:items-end md:gap-[72px] md:p-[72px]"
       aria-labelledby="about-designer-heading"
     >
-      <div className="flex flex-col items-start gap-[72px] md:flex-row md:items-end">
+      <div className="flex flex-col items-start gap-10 md:flex-row md:items-end md:gap-[72px]">
         <div className="flex flex-col items-start gap-8 flex-1 grow">
           <div className="flex flex-col items-start gap-6 self-stretch w-full">
             <h2
@@ -46,7 +46,7 @@ export const About = ({ site, specialties }: AboutProps) => {
           </a>
         </div>
         <ul
-          className="inline-flex flex-col items-end gap-6 flex-[0_0_auto]"
+          className="inline-flex flex-col items-start gap-6 flex-[0_0_auto] md:items-end"
           aria-label="Design specialties"
         >
           {specialties.map((specialty, index) => (

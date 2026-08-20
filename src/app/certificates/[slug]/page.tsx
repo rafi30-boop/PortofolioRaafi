@@ -57,7 +57,7 @@ export default async function CertificatePage({
     <div className="flex min-w-[320px] flex-col items-start bg-white">
       <Navbar site={site} />
       <main className="flex w-full flex-col items-start">
-        <article className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-12 p-[72px]">
+        <article className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-12 p-6 md:p-[72px]">
           <Link
             href="/#certificates"
             className="group inline-flex items-center gap-2 font-body-16px-medium text-neutral-60 transition-colors hover:text-neutral-100"

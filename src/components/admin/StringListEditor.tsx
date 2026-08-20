@@ -47,9 +47,9 @@ export const StringListEditor = ({
           </span>
         ))}
       </div>
-      <div className="flex gap-2">
+      <div className="flex flex-wrap gap-2">
         <input
-          className="w-full rounded-xl border border-neutral-20 bg-white px-4 py-2 font-body-16px-regular text-neutral-100 outline-none transition-colors focus:border-neutral-100"
+          className="w-full min-w-[140px] flex-1 rounded-xl border border-neutral-20 bg-white px-4 py-2 font-body-16px-regular text-neutral-100 outline-none transition-colors focus:border-neutral-100"
           value={draft}
           placeholder={placeholder}
           onChange={(event) => setDraft(event.target.value)}

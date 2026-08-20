@@ -84,7 +84,7 @@ export const Navbar = ({ site }: NavbarProps) => {
 
         <div className="inline-flex items-start gap-4">
           <a
-            className="group inline-flex h-12 items-center justify-center gap-3 rounded-[100px] border border-solid border-neutral-100 px-5 py-3 transition-colors hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-100"
+            className="group hidden h-12 items-center justify-center gap-3 rounded-[100px] border border-solid border-neutral-100 px-5 py-3 transition-colors hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-100 sm:inline-flex"
             href="#contact"
           >
             <span className="whitespace-nowrap font-body-16px-semibold text-neutral-100 transition-colors group-hover:text-white">
@@ -122,7 +122,7 @@ export const Navbar = ({ site }: NavbarProps) => {
             </a>
             <div className="inline-flex items-start gap-4">
               <a
-                className="inline-flex h-12 items-center justify-center gap-3 rounded-[100px] border border-solid border-neutral-0 px-5 py-3 transition-colors hover:bg-neutral-0 hover:text-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-0"
+                className="hidden h-12 items-center justify-center gap-3 rounded-[100px] border border-solid border-neutral-0 px-5 py-3 transition-colors hover:bg-neutral-0 hover:text-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-0 sm:inline-flex"
                 href="#contact"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -175,7 +175,7 @@ export const Navbar = ({ site }: NavbarProps) => {
                       {item.number}
                     </span>
                   </span>
-                  <span className="inline-flex flex-[0_0_auto] items-start gap-2 rounded-[100px] border border-solid border-neutral-0 px-7 py-4 transition-colors group-hover:bg-neutral-0 group-hover:text-neutral-100">
+                  <span className="hidden flex-[0_0_auto] items-start gap-2 rounded-[100px] border border-solid border-neutral-0 px-7 py-4 transition-colors group-hover:bg-neutral-0 group-hover:text-neutral-100 sm:inline-flex">
                     <ArrowRight className="!relative !h-6 !w-6 text-neutral-0 transition-colors group-hover:text-neutral-100" />
                   </span>
                 </a>

@@ -59,7 +59,7 @@ const ProjectCard = ({ project }: { project: Project }) => (
         </span>
       </div>
     </Link>
-    <div className="flex w-full items-start justify-between gap-6">
+    <div className="flex w-full flex-wrap items-start justify-between gap-6">
       <div className="flex flex-col items-start gap-2">
         <h3 className="font-body-22px-semibold text-neutral-100">
           {project.title}
@@ -84,7 +84,7 @@ const ProjectCard = ({ project }: { project: Project }) => (
       <Link
         href={`/projects/${project.slug}`}
         aria-label={`View ${project.title} project`}
-        className="inline-flex flex-[0_0_auto] items-start gap-2 rounded-[100px] border border-solid border-neutral-100 px-7 py-4 transition-colors hover:bg-neutral-100 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-100"
+        className="inline-flex flex-[0_0_auto] items-start gap-2 rounded-[100px] border border-solid border-neutral-100 px-5 py-3 transition-colors hover:bg-neutral-100 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-100 md:px-7 md:py-4"
       >
         <ArrowRight className="!relative !h-6 !w-6" />
       </Link>
@@ -104,7 +104,7 @@ export const Projects = ({ projects }: ProjectsProps) => {
   return (
     <section
       id="projects"
-      className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-10 p-[72px]"
+      className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-10 p-6 md:p-[72px]"
       aria-labelledby="selected-works-heading"
     >
       <div className="flex flex-col items-start gap-10">
