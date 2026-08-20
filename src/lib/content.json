@@ -78,7 +78,19 @@
     "NODE.JS"
   ],
   "skills": [],
-  "projects": [],
+  "projects": [
+    {
+      "slug": "finlitgo",
+      "title": "finlitgo",
+      "category": "web",
+      "description": "snajkdnkajdnkajdnakdnjkas",
+      "year": "2026",
+      "image": "/uploads/1787200332191-Desain-tanpa-judul--2-.png",
+      "gradient": "linear-gradient(135deg, #030712 0%, #1e3a8a 100%)",
+      "tech": [],
+      "details": []
+    }
+  ],
   "experiences": [],
   "educations": [],
   "certificates": []
