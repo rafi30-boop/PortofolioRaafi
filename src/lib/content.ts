@@ -24,6 +24,12 @@ export async function saveContent(
     return "github";
   }
 
+  if (process.env.NODE_ENV === "production") {
+    throw new Error(
+      "GITHUB_TOKEN, GITHUB_OWNER, dan GITHUB_REPO belum diset di Environment Variables Vercel."
+    );
+  }
+
   await fs.writeFile(CONTENT_PATH, raw, "utf-8");
   return "disk";
 }

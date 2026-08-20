@@ -56,6 +56,16 @@ export async function POST(request: Request) {
       });
     }
 
+    if (process.env.NODE_ENV === "production") {
+      return NextResponse.json(
+        {
+          error:
+            "GITHUB_TOKEN, GITHUB_OWNER, dan GITHUB_REPO belum diset di Environment Variables Vercel.",
+        },
+        { status: 500 }
+      );
+    }
+
     const uploadsDir = path.join(process.cwd(), "public", "uploads");
     await fs.mkdir(uploadsDir, { recursive: true });
     await fs.writeFile(path.join(uploadsDir, filename), buffer);
