@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --neutral-0: rgba(255, 255, 255, 1);
+  --neutral-10: rgba(249, 250, 251, 1);
+  --neutral-100: rgba(3, 7, 18, 1);
+  --neutral-20: rgba(229, 231, 235, 1);
+  --neutral-30: rgba(209, 213, 219, 1);
+  --neutral-40: rgba(174, 178, 186, 1);
+  --neutral-50: rgba(107, 114, 128, 1);
+  --neutral-60: rgba(75, 85, 99, 1);
+  --neutral-70: rgba(55, 65, 81, 1);
+  --neutral-80: rgba(31, 41, 55, 1);
+  --neutral-90: rgba(17, 24, 39, 1);
+
+  --body-16px-medium-font-family: "Inter Tight", Helvetica, sans-serif;
+  --body-16px-medium-font-size: 16px;
+  --body-16px-medium-font-weight: 500;
+  --body-16px-medium-letter-spacing: 0.32px;
+  --body-16px-medium-line-height: 150%;
+  --body-16px-regular-font-family: "Inter Tight", Helvetica, sans-serif;
+  --body-16px-regular-font-size: 16px;
+  --body-16px-regular-font-weight: 400;
+  --body-16px-regular-letter-spacing: 0.32px;
+  --body-16px-regular-line-height: 150%;
+  --body-16px-semibold-font-family: "Inter Tight", Helvetica, sans-serif;
+  --body-16px-semibold-font-size: 16px;
+  --body-16px-semibold-font-weight: 600;
+  --body-16px-semibold-letter-spacing: 0.32px;
+  --body-16px-semibold-line-height: 150%;
+  --body-18px-regular-font-family: "Inter Tight", Helvetica, sans-serif;
+  --body-18px-regular-font-size: 18px;
+  --body-18px-regular-font-weight: 400;
+  --body-18px-regular-letter-spacing: 0.36px;
+  --body-18px-regular-line-height: 150%;
+  --body-18px-semibold-font-family: "Inter Tight", Helvetica, sans-serif;
+  --body-18px-semibold-font-size: 18px;
+  --body-18px-semibold-font-weight: 600;
+  --body-18px-semibold-letter-spacing: 0.36px;
+  --body-18px-semibold-line-height: 150%;
+  --body-22px-regular-font-family: "Inter Tight", Helvetica, sans-serif;
+  --body-22px-regular-font-size: 22px;
+  --body-22px-regular-font-weight: 400;
+  --body-22px-regular-letter-spacing: 0.44px;
+  --body-22px-regular-line-height: 130%;
+  --body-22px-semibold-font-family: "Inter Tight", Helvetica, sans-serif;
+  --body-22px-semibold-font-size: 22px;
+  --body-22px-semibold-font-weight: 600;
+  --body-22px-semibold-letter-spacing: 0.44px;
+  --body-22px-semibold-line-height: 130%;
+  --body-28px-medium-font-family: "Inter Tight", Helvetica, sans-serif;
+  --body-28px-medium-font-size: 28px;
+  --body-28px-medium-font-weight: 500;
+  --body-28px-medium-letter-spacing: 0.84px;
+  --body-28px-medium-line-height: 120%;
+
+  --heading-desktop-h1-font-size: 104px;
+  --heading-desktop-h1-font-weight: 700;
+  --heading-desktop-h1-letter-spacing: -2.08px;
+  --heading-desktop-h1-line-height: 100%;
+  --heading-desktop-h2-font-size: 72px;
+  --heading-desktop-h2-font-weight: 600;
+  --heading-desktop-h2-letter-spacing: -1.44px;
+  --heading-desktop-h2-line-height: 100%;
+  --heading-desktop-h5-font-size: 40px;
+  --heading-desktop-h5-font-weight: 600;
+  --heading-desktop-h5-letter-spacing: -0.8px;
+  --heading-desktop-h5-line-height: 100%;
+
+  --animate-spin: spin 1s linear infinite;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-inter-tight), "Inter Tight", Helvetica,
+      sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+  }
+
+  body {
+    @apply bg-white font-sans text-neutral-100 antialiased;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    @apply appearance-none bg-transparent border-0 outline-none;
+  }
+
+  ::selection {
+    background: var(--neutral-100);
+    color: var(--neutral-0);
+  }
+}
+
+@layer components {
+  .animate-fade-in {
+    animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+  }
+
+  .animate-fade-up {
+    animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+  }
+
+  .animate-marquee {
+    animation: marquee var(--duration, 30s) infinite linear;
+  }
+
+  .animate-marquee-vertical {
+    animation: marquee-vertical var(--duration, 30s) linear infinite;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 8s infinite;
+  }
+
+  .animate-spin {
+    animation: var(--animate-spin);
+  }
+
+  .animate-image-glow {
+    animation: image-glow 3s ease infinite;
+  }
+
+  .animate-marquee-reverse {
+    animation: marquee-reverse var(--duration, 30s) infinite linear;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width, 300px)) 0;
+  }
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width, 300px)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap, 0px)));
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(calc(-100% - var(--gap, 0px)));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - var(--gap, 0px)));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

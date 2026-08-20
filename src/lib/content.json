@@ -1,0 +1,85 @@
+{
+  "site": {
+    "name": "Raafi Fajar",
+    "firstName": "Raafi",
+    "role": "Frontend Developer",
+    "title": "Frontend Developer & UI Designer",
+    "headline": "Frontend Developer crafting fast, accessible, and beautiful web experiences.",
+    "description": "Raafi Fajar is a frontend developer focused on building fast, accessible, and delightful web experiences with React, Next.js, and Tailwind CSS.",
+    "email": "raafifajar892@gmail.com",
+    "location": "Jakarta, Indonesia",
+    "url": "http://localhost:3000",
+    "responseTime": "Usually replies within 24 hours",
+    "socials": [
+      {
+        "label": "Instagram",
+        "href": "https://www.instagram.com/"
+      },
+      {
+        "label": "Behance",
+        "href": "https://www.behance.net/"
+      },
+      {
+        "label": "Twitter",
+        "href": "https://twitter.com/"
+      },
+      {
+        "label": "Dribbble",
+        "href": "https://dribbble.com/"
+      }
+    ],
+    "footerColumns": [
+      [
+        {
+          "label": "About",
+          "href": "#about"
+        },
+        {
+          "label": "Projects",
+          "href": "#projects"
+        },
+        {
+          "label": "Skills",
+          "href": "#skills"
+        }
+      ],
+      [
+        {
+          "label": "Experience",
+          "href": "#experience"
+        },
+        {
+          "label": "Education",
+          "href": "#education"
+        },
+        {
+          "label": "Certificates",
+          "href": "#certificates"
+        }
+      ],
+      [
+        {
+          "label": "Contact",
+          "href": "#contact"
+        },
+        {
+          "label": "Let's Talk",
+          "href": "#contact"
+        }
+      ]
+    ]
+  },
+  "specialties": [
+    "REACT",
+    "NEXT.JS",
+    "TYPESCRIPT",
+    "TAILWIND CSS",
+    "UI DESIGN",
+    "NODE.JS"
+  ],
+  "skills": [],
+  "projects": [],
+  "experiences": [],
+  "educations": [],
+  "certificates": []
+}

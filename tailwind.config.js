@@ -1,0 +1,38 @@
+module.exports = {
+  content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
+  corePlugins: { preflight: true },
+  theme: {
+    extend: {
+      colors: {
+        "neutral-0": "var(--neutral-0)",
+        "neutral-10": "var(--neutral-10)",
+        "neutral-100": "var(--neutral-100)",
+        "neutral-20": "var(--neutral-20)",
+        "neutral-30": "var(--neutral-30)",
+        "neutral-40": "var(--neutral-40)",
+        "neutral-50": "var(--neutral-50)",
+        "neutral-60": "var(--neutral-60)",
+        "neutral-70": "var(--neutral-70)",
+        "neutral-80": "var(--neutral-80)",
+        "neutral-90": "var(--neutral-90)",
+      },
+      fontFamily: {
+        sans: ["var(--font-inter-tight)", "Inter Tight", "Helvetica", "sans-serif"],
+        "body-16px-medium": ["var(--font-inter-tight)", "Inter Tight", "Helvetica", "sans-serif"],
+        "body-16px-regular": ["var(--font-inter-tight)", "Inter Tight", "Helvetica", "sans-serif"],
+        "body-16px-semibold": ["var(--font-inter-tight)", "Inter Tight", "Helvetica", "sans-serif"],
+        "body-18px-medium": ["var(--font-inter-tight)", "Inter Tight", "Helvetica", "sans-serif"],
+        "body-18px-regular": ["var(--font-inter-tight)", "Inter Tight", "Helvetica", "sans-serif"],
+        "body-18px-semibold": ["var(--font-inter-tight)", "Inter Tight", "Helvetica", "sans-serif"],
+        "body-22px-medium": ["var(--font-inter-tight)", "Inter Tight", "Helvetica", "sans-serif"],
+        "body-22px-regular": ["var(--font-inter-tight)", "Inter Tight", "Helvetica", "sans-serif"],
+        "body-22px-semibold": ["var(--font-inter-tight)", "Inter Tight", "Helvetica", "sans-serif"],
+        "body-28px-medium": ["var(--font-inter-tight)", "Inter Tight", "Helvetica", "sans-serif"],
+        "heading-desktop-h1": ["var(--font-inter-tight)", "Inter Tight", "Helvetica", "sans-serif"],
+        "heading-desktop-h2": ["var(--font-inter-tight)", "Inter Tight", "Helvetica", "sans-serif"],
+        "heading-desktop-h5": ["var(--font-inter-tight)", "Inter Tight", "Helvetica", "sans-serif"],
+      },
+    },
+  },
+  plugins: [],
+};
