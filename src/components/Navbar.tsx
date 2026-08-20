@@ -65,10 +65,20 @@ export const Navbar = ({ site }: NavbarProps) => {
     }, 600);
   };
 
+  const handleMenuNavigation = (href: string) => {
+    setIsMenuOpen(false);
+    setTimeout(() => {
+      document.querySelector(href)?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 60);
+  };
+
   return (
     <>
       <header
-        className={`sticky top-0 z-50 flex w-full items-center justify-between px-6 py-6 transition-all duration-300 md:px-[72px] ${
+        className={`sticky top-0 z-50 flex w-full items-center justify-between px-6 py-3.5 transition-all duration-300 md:px-[72px] ${
           isScrolled
             ? "bg-white/80 backdrop-blur-md shadow-[0_1px_0_0_var(--neutral-20)]"
             : "bg-transparent"
@@ -79,12 +89,12 @@ export const Navbar = ({ site }: NavbarProps) => {
           href="#top"
           aria-label={`${site.name} home`}
         >
-          <Logo className="h-6 w-[140px]" />
+          <Logo className="h-5 w-[117px]" />
         </a>
 
-        <div className="inline-flex items-start gap-4">
+        <div className="inline-flex items-start gap-3">
           <a
-            className="group hidden h-12 items-center justify-center gap-3 rounded-[100px] border border-solid border-neutral-100 px-5 py-3 transition-colors hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-100 sm:inline-flex"
+            className="group hidden h-10 items-center justify-center gap-3 rounded-[100px] border border-solid border-neutral-100 px-5 py-2 transition-colors hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-100 sm:inline-flex"
             href="#contact"
           >
             <span className="whitespace-nowrap font-body-16px-semibold text-neutral-100 transition-colors group-hover:text-white">
@@ -93,7 +103,7 @@ export const Navbar = ({ site }: NavbarProps) => {
             <ArrowRight className="!relative !h-5 !w-5" />
           </a>
           <button
-            className="inline-flex h-12 items-center gap-3 rounded-[100px] border border-solid border-neutral-100 px-6 py-3 transition-colors hover:bg-neutral-100 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-100"
+            className="inline-flex h-10 items-center gap-3 rounded-[100px] border border-solid border-neutral-100 px-5 py-2 transition-colors hover:bg-neutral-100 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-100"
             type="button"
             aria-label="Open menu"
             aria-expanded={isMenuOpen}
@@ -111,20 +121,20 @@ export const Navbar = ({ site }: NavbarProps) => {
           aria-modal="true"
           aria-label="Website navigation menu"
         >
-          <header className="flex w-full max-w-[1200px] items-center justify-between self-center px-6 py-6 md:px-[72px]">
+          <header className="flex w-full max-w-[1200px] items-center justify-between self-center px-6 py-3.5 md:px-[72px]">
             <a
               className="relative flex items-center gap-2 rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-0"
               href="#top"
               aria-label={`${site.name} home`}
-              onClick={() => setIsMenuOpen(false)}
+              onClick={() => handleMenuNavigation("#top")}
             >
-              <Logo className="h-6 w-[140px]" color="#ffffff" />
+              <Logo className="h-5 w-[117px]" color="#ffffff" />
             </a>
-            <div className="inline-flex items-start gap-4">
+            <div className="inline-flex items-start gap-3">
               <a
-                className="hidden h-12 items-center justify-center gap-3 rounded-[100px] border border-solid border-neutral-0 px-5 py-3 transition-colors hover:bg-neutral-0 hover:text-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-0 sm:inline-flex"
+                className="hidden h-10 items-center justify-center gap-3 rounded-[100px] border border-solid border-neutral-0 px-5 py-2 transition-colors hover:bg-neutral-0 hover:text-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-0 sm:inline-flex"
                 href="#contact"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => handleMenuNavigation("#contact")}
               >
                 <span className="whitespace-nowrap font-body-16px-semibold text-neutral-0 transition-colors hover:text-neutral-100">
                   Let&apos;s Talk
@@ -132,7 +142,7 @@ export const Navbar = ({ site }: NavbarProps) => {
                 <ArrowRight className="!relative !h-5 !w-5 text-neutral-0" />
               </a>
               <button
-                className="inline-flex h-12 items-center gap-3 rounded-[100px] border border-solid border-neutral-0 px-6 py-3 transition-colors hover:bg-neutral-0 hover:text-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-0"
+                className="inline-flex h-10 items-center gap-3 rounded-[100px] border border-solid border-neutral-0 px-5 py-2 transition-colors hover:bg-neutral-0 hover:text-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-0"
                 type="button"
                 aria-label="Close menu"
                 onClick={() => setIsMenuOpen(false)}
@@ -143,28 +153,28 @@ export const Navbar = ({ site }: NavbarProps) => {
           </header>
 
           <section
-            className="flex w-full max-w-[1200px] flex-col items-start gap-10 self-center px-6 pb-[72px] md:px-[72px]"
+            className="flex w-full max-w-[1200px] flex-col items-start gap-8 self-center px-6 pb-[72px] md:px-[72px]"
             aria-label="Website navigation"
           >
             <div className="h-px w-full bg-neutral-60" aria-hidden="true" />
 
             <nav
-              className="flex w-full flex-col items-start gap-8 self-stretch"
+              className="flex w-full flex-col items-start gap-6 self-stretch"
               aria-label="Primary navigation"
             >
               {navigationItems.map((item, index) => (
                 <a
                   key={item.label}
-                  className="group animate-fade-up flex w-full items-start justify-between self-stretch rounded-sm opacity-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-0"
+                  className="group animate-fade-up flex w-full items-center justify-between self-stretch rounded-sm opacity-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-0"
                   href={item.href}
                   style={{ animationDelay: `${index * 80}ms` }}
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => handleMenuNavigation(item.href)}
                 >
                   <span className="inline-flex items-baseline gap-4">
                     <span
                       className="whitespace-nowrap font-heading-desktop-h2 text-neutral-0 transition-colors group-hover:text-neutral-40"
                       style={{
-                        fontSize: "clamp(32px, 6.5vw, 72px)",
+                        fontSize: "clamp(28px, 5.5vw, 64px)",
                         lineHeight: 1,
                         letterSpacing: "-0.02em",
                       }}
@@ -175,8 +185,8 @@ export const Navbar = ({ site }: NavbarProps) => {
                       {item.number}
                     </span>
                   </span>
-                  <span className="hidden flex-[0_0_auto] items-start gap-2 rounded-[100px] border border-solid border-neutral-0 px-7 py-4 transition-colors group-hover:bg-neutral-0 group-hover:text-neutral-100 sm:inline-flex">
-                    <ArrowRight className="!relative !h-6 !w-6 text-neutral-0 transition-colors group-hover:text-neutral-100" />
+                  <span className="hidden flex-[0_0_auto] items-center gap-2 rounded-[100px] border border-solid border-neutral-0 px-6 py-3 transition-colors group-hover:bg-neutral-0 group-hover:text-neutral-100 sm:inline-flex">
+                    <ArrowRight className="!relative !h-5 !w-5 text-neutral-0 transition-colors group-hover:text-neutral-100" />
                   </span>
                 </a>
               ))}
@@ -185,7 +195,7 @@ export const Navbar = ({ site }: NavbarProps) => {
             <div className="h-px w-full bg-neutral-60" aria-hidden="true" />
 
             <section
-              className="flex w-full flex-col items-start gap-14 md:flex-row md:items-start"
+              className="flex w-full flex-col items-start gap-10 md:flex-row md:items-start"
               aria-label="Social links and newsletter"
             >
               <div className="flex flex-1 grow flex-col items-start justify-between gap-6">
