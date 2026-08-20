@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { ArrowRight, ArrowUpRight } from "@/components/icons";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { Reveal } from "@/components/Reveal";
 import { getContent } from "@/lib/content";
 
 interface ProjectPageProps {
@@ -56,15 +57,18 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <Navbar site={site} />
       <main className="flex w-full flex-col items-start">
         <article className="mx-auto flex w-full max-w-[1200px] flex-col items-start gap-12 p-6 md:p-[72px]">
-          <Link
-            href="/#projects"
-            className="group inline-flex items-center gap-2 font-body-16px-medium text-neutral-60 transition-colors hover:text-neutral-100"
-          >
-            <ArrowUpRight className="!relative !h-5 !w-5 rotate-180 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-            Back to works
-          </Link>
+          <Reveal>
+            <Link
+              href="/#projects"
+              className="group inline-flex items-center gap-2 font-body-16px-medium text-neutral-60 transition-colors hover:text-neutral-100"
+            >
+              <ArrowUpRight className="!relative !h-5 !w-5 rotate-180 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+              Back to works
+            </Link>
+          </Reveal>
 
-          <header className="flex flex-col items-start gap-6">
+          <Reveal delay={60} className="w-full">
+            <header className="flex flex-col items-start gap-6">
             <div className="flex flex-wrap items-center gap-3">
               <span className="rounded-full bg-neutral-10 px-4 py-1.5 font-body-16px-medium text-neutral-60">
                 {project.category}
@@ -90,7 +94,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               {project.description}
             </p>
           </header>
+          </Reveal>
 
+          <Reveal delay={120} className="w-full">
           <div
             className="relative flex h-[320px] w-full items-center justify-center overflow-hidden rounded-3xl md:h-[512px] md:w-[1056px]"
             role="img"
@@ -125,7 +131,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               </span>
             )}
           </div>
+          </Reveal>
 
+          <Reveal delay={160} className="w-full">
           <div className="flex w-full max-w-[1056px] flex-col gap-12 md:flex-row">
             <div className="flex-1 grow">
               <h2 className="mb-6 font-heading-desktop-h5 text-neutral-100">
@@ -183,7 +191,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               </Link>
             </aside>
           </div>
+          </Reveal>
 
+          <Reveal delay={200}>
           <Link
             href="/#projects"
             className="inline-flex items-center gap-2 font-body-16px-semibold text-neutral-100 transition-colors hover:text-neutral-50"
@@ -191,6 +201,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <ArrowRight className="!relative !h-5 !w-5 rotate-180" />
             All works
           </Link>
+          </Reveal>
         </article>
       </main>
       <Footer site={site} />

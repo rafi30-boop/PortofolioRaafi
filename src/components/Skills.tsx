@@ -1,4 +1,5 @@
 import type { Skill } from "@/lib/types";
+import { Reveal } from "@/components/Reveal";
 
 interface SkillsProps {
   skills: Skill[];
@@ -50,32 +51,38 @@ export const Skills = ({ skills, specialties }: SkillsProps) => {
         </div>
 
         <ul className="grid w-full max-w-[1056px] grid-cols-1 gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
-          {skills.map((skill) => (
-            <li key={skill.name} className="flex flex-col gap-3">
-              <div className="flex items-center justify-between">
-                <span className="font-body-18px-semibold text-neutral-100">
-                  {skill.name}
-                </span>
-                <span className="font-body-16px-regular text-neutral-50">
-                  {skill.level}%
-                </span>
-              </div>
-              <div
-                className="h-1.5 w-full overflow-hidden rounded-full bg-neutral-20"
-                role="progressbar"
-                aria-valuenow={skill.level}
-                aria-valuemin={0}
-                aria-valuemax={100}
-                aria-label={`${skill.name} proficiency`}
-              >
-                <div
-                  className="animate-fade-in h-full rounded-full bg-neutral-100 opacity-0"
-                  style={{
-                    width: `${skill.level}%`,
-                    animationDelay: "200ms",
-                  }}
-                />
-              </div>
+          {skills.map((skill, index) => (
+            <li key={skill.name}>
+              <Reveal delay={Math.min(index * 60, 300)}>
+                <div className="flex flex-col gap-3">
+                  <div className="flex items-center justify-between">
+                    <span className="font-body-18px-semibold text-neutral-100">
+                      {skill.name}
+                    </span>
+                    <span className="font-body-16px-regular text-neutral-50">
+                      {skill.level}%
+                    </span>
+                  </div>
+                  <div
+                    className="h-1.5 w-full overflow-hidden rounded-full bg-neutral-20"
+                    role="progressbar"
+                    aria-valuenow={skill.level}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    aria-label={`${skill.name} proficiency`}
+                  >
+                    <div
+                      className="skill-fill h-full rounded-full bg-neutral-100"
+                      style={
+                        {
+                          "--skill-width": `${skill.level}%`,
+                          width: `${skill.level}%`,
+                        } as React.CSSProperties
+                      }
+                    />
+                  </div>
+                </div>
+              </Reveal>
             </li>
           ))}
         </ul>

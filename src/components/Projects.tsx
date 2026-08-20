@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import type { Project } from "@/lib/types";
 import { ArrowRight } from "@/components/icons";
+import { Reveal } from "@/components/Reveal";
 
 interface ProjectsProps {
   projects: Project[];
@@ -141,8 +142,14 @@ export const Projects = ({ projects }: ProjectsProps) => {
           </div>
         </header>
         <div className="flex flex-col items-start gap-10">
-          {visibleProjects.map((project) => (
-            <ProjectCard key={project.title} project={project} />
+          {visibleProjects.map((project, index) => (
+            <Reveal
+              key={project.title}
+              delay={Math.min(index * 90, 360)}
+              className="w-full"
+            >
+              <ProjectCard project={project} />
+            </Reveal>
           ))}
         </div>
       </div>

@@ -8,7 +8,7 @@
     "description": "Raafi Fajar is a frontend developer focused on building fast, accessible, and delightful web experiences with React, Next.js, and Tailwind CSS.",
     "email": "raafifajar892@gmail.com",
     "location": "Jakarta, Indonesia",
-    "url": "http://localhost:3000",
+    "url": "https://portofolio-raafi-oc2q.vercel.app",
     "responseTime": "Usually replies within 24 hours",
     "socials": [
       {
@@ -77,9 +77,200 @@
     "UI DESIGN",
     "NODE.JS"
   ],
-  "skills": [],
-  "projects": [],
-  "experiences": [],
-  "educations": [],
-  "certificates": []
+  "skills": [
+    {
+      "name": "HTML & CSS",
+      "level": 95
+    },
+    {
+      "name": "JavaScript",
+      "level": 90
+    },
+    {
+      "name": "TypeScript",
+      "level": 80
+    },
+    {
+      "name": "React",
+      "level": 85
+    },
+    {
+      "name": "Next.js",
+      "level": 85
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": 90
+    },
+    {
+      "name": "Node.js",
+      "level": 75
+    },
+    {
+      "name": "UI Design",
+      "level": 80
+    }
+  ],
+  "projects": [
+    {
+      "slug": "sportly",
+      "title": "Sportly",
+      "category": "Mobile App Design",
+      "year": "2025",
+      "description": "A fitness tracking app designed to keep users motivated with clean, data-driven dashboards and a seamless workout logging flow.",
+      "image": "",
+      "gradient": "linear-gradient(135deg, #030712 0%, #1e3a8a 100%)",
+      "tech": ["React Native", "TypeScript", "UI Design"],
+      "details": [
+        "Sportly helps people build consistent workout habits. The design focuses on reducing friction between opening the app and starting a session.",
+        "Key screens include a daily activity dashboard, workout logging with drag-to-reorder sets, and a progress overview with clear visual summaries.",
+        "The visual language uses bold typography, high contrast, and motion to celebrate every completed session."
+      ]
+    },
+    {
+      "slug": "payrole",
+      "title": "Payrole",
+      "category": "Website Design",
+      "year": "2025",
+      "description": "A payroll management platform that turns complex salary data into simple, readable dashboards for HR teams.",
+      "image": "",
+      "gradient": "linear-gradient(135deg, #030712 0%, #166534 100%)",
+      "tech": ["Next.js", "TypeScript", "Tailwind CSS"],
+      "details": [
+        "Payrole was built to make payroll less intimidating. The interface organizes employees, payslips, and tax summaries into a clear workspace.",
+        "The dashboard highlights what matters: pending reviews, payroll cycles, and anomalies — all visible at a glance.",
+        "Component-driven development kept the system consistent and easy to maintain across dozens of screens."
+      ]
+    },
+    {
+      "slug": "wepay",
+      "title": "Wepay",
+      "category": "Mobile App Design",
+      "year": "2024",
+      "description": "A digital wallet concept focused on speed and trust, with a calm visual style and instant feedback on every action.",
+      "image": "",
+      "gradient": "linear-gradient(135deg, #030712 0%, #6d28d9 100%)",
+      "tech": ["Figma", "UI Design", "Prototyping"],
+      "details": [
+        "Wepay reimagines everyday payments with a minimal interface where balance, history, and actions fit on one screen.",
+        "Transaction flows are designed around quick taps: send, request, split bills, and top-up with clear confirmations.",
+        "The prototype was tested with real users to validate the flow before development."
+      ]
+    },
+    {
+      "slug": "estatery",
+      "title": "Estatery",
+      "category": "Website Design",
+      "year": "2024",
+      "description": "A property listing website that makes browsing homes feel effortless with strong imagery and fast filters.",
+      "image": "",
+      "gradient": "linear-gradient(135deg, #030712 0%, #9a3412 100%)",
+      "tech": ["React", "TypeScript", "Tailwind CSS"],
+      "details": [
+        "Estatery focuses on discovery: search, filter, and compare properties without unnecessary clicks.",
+        "Each listing page balances rich photography with essential information, keeping the user in control.",
+        "Performance was a priority — images are optimized and the interface stays responsive on every device."
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "role": "Frontend Developer",
+      "company": "Digital Agency",
+      "period": "2024 — Present",
+      "description": "Building responsive web applications with React and Next.js, collaborating with designers to ship pixel-perfect interfaces."
+    },
+    {
+      "role": "UI Designer & Developer",
+      "company": "Freelance",
+      "period": "2023 — 2024",
+      "description": "Designed and developed landing pages and dashboards for small businesses, from wireframe to production."
+    },
+    {
+      "role": "Web Development Intern",
+      "company": "Startup Inc.",
+      "period": "2023",
+      "description": "Assisted in developing internal tools and learning industry best practices in modern JavaScript development."
+    }
+  ],
+  "educations": [
+    {
+      "degree": "Vocational High School — Software Engineering",
+      "school": "SMK Negeri 1",
+      "period": "2022 — 2025",
+      "description": "Focused on web and mobile development: HTML, CSS, JavaScript, UI/UX fundamentals, and software engineering practices."
+    },
+    {
+      "degree": "Self-Directed Learning",
+      "school": "Online Courses",
+      "period": "2023 — Present",
+      "description": "Continuously learning through certified courses in frontend development, algorithms, and UX design."
+    }
+  ],
+  "certificates": [
+    {
+      "slug": "meta-front-end-developer",
+      "title": "Meta Front-End Developer",
+      "issuer": "Meta",
+      "year": "2025",
+      "description": "Professional certificate covering advanced React, accessibility, testing, and front-end development practices.",
+      "credentialUrl": "",
+      "image": "",
+      "gradient": "linear-gradient(135deg, #0f172a 0%, #2563eb 100%)",
+      "details": [
+        "This program covered the full front-end spectrum: HTML, CSS, JavaScript, React, and testing.",
+        "Projects included building accessible interfaces and writing component tests with industry tools.",
+        "The capstone project integrated everything into a complete, responsive application."
+      ],
+      "skills": ["React", "Accessibility", "Testing"]
+    },
+    {
+      "slug": "javascript-algorithms-data-structures",
+      "title": "JavaScript Algorithms and Data Structures",
+      "issuer": "freeCodeCamp",
+      "year": "2025",
+      "description": "Certified understanding of core algorithms, data structures, and functional programming in JavaScript.",
+      "credentialUrl": "",
+      "image": "",
+      "gradient": "linear-gradient(135deg, #0f172a 0%, #0d9488 100%)",
+      "details": [
+        "Covered arrays, objects, recursion, sorting, and searching algorithms in JavaScript.",
+        "Practiced problem-solving through interactive challenges and projects.",
+        "Strengthened the fundamentals that power efficient, clean code."
+      ],
+      "skills": ["Algorithms", "Data Structures", "JavaScript"]
+    },
+    {
+      "slug": "google-ux-design-professional",
+      "title": "Google UX Design Professional",
+      "issuer": "Google",
+      "year": "2024",
+      "description": "Professional certificate in UX design: research, wireframing, prototyping, and usability testing.",
+      "credentialUrl": "",
+      "image": "",
+      "gradient": "linear-gradient(135deg, #0f172a 0%, #7c3aed 100%)",
+      "details": [
+        "Learned the complete UX process from user research to high-fidelity prototypes.",
+        "Built a portfolio of case studies using Figma and modern design systems.",
+        "Emphasized inclusive design and usability testing in every project."
+      ],
+      "skills": ["UX Research", "Figma", "Prototyping"]
+    },
+    {
+      "slug": "aws-cloud-practitioner",
+      "title": "AWS Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "year": "2024",
+      "description": "Foundational understanding of AWS cloud concepts, services, security, and architecture best practices.",
+      "credentialUrl": "",
+      "image": "",
+      "gradient": "linear-gradient(135deg, #0f172a 0%, #d97706 100%)",
+      "details": [
+        "Gained a solid foundation in cloud computing concepts and core AWS services.",
+        "Learned about security, pricing models, and architectural best practices.",
+        "Useful for deploying and scaling web applications in the cloud."
+      ],
+      "skills": ["Cloud Computing", "AWS", "DevOps Basics"]
+    }
+  ]
 }

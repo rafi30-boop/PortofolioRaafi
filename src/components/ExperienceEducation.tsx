@@ -1,4 +1,5 @@
 import type { EducationItem, ExperienceItem } from "@/lib/types";
+import { Reveal } from "@/components/Reveal";
 
 interface ExperienceEducationProps {
   experiences: ExperienceItem[];
@@ -29,29 +30,31 @@ const TimelineList = ({ items, title, headingId, eyebrow }: TimelineListProps) =
       </h2>
     </div>
     <ul className="flex w-full flex-col items-start gap-6">
-      {items.map((item) => (
+      {items.map((item, index) => (
         <li
           key={`${item.period}-${item.company ?? item.school}`}
-          className="relative flex flex-col gap-4 self-stretch w-full border-b border-neutral-20 pb-6 pl-6"
+          className="relative flex flex-col self-stretch w-full border-b border-neutral-20 pb-6 pl-6"
         >
           <span
             className="absolute left-0 top-2 h-2.5 w-2.5 rounded-full bg-neutral-100"
             aria-hidden="true"
           />
-          <div className="flex flex-wrap items-baseline justify-between gap-2">
-            <h3 className="font-body-22px-semibold text-neutral-100">
-              {item.role ?? item.degree}
-            </h3>
-            <span className="font-body-16px-medium text-neutral-50">
-              {item.period}
-            </span>
-          </div>
-          <p className="font-body-18px-semibold text-neutral-50">
-            {item.company ?? item.school}
-          </p>
-          <p className="max-w-[520px] font-body-16px-regular text-neutral-70">
-            {item.description}
-          </p>
+          <Reveal delay={Math.min(index * 70, 280)} className="flex w-full flex-col gap-4">
+            <div className="flex flex-wrap items-baseline justify-between gap-2">
+              <h3 className="font-body-22px-semibold text-neutral-100">
+                {item.role ?? item.degree}
+              </h3>
+              <span className="font-body-16px-medium text-neutral-50">
+                {item.period}
+              </span>
+            </div>
+            <p className="font-body-18px-semibold text-neutral-50">
+              {item.company ?? item.school}
+            </p>
+            <p className="max-w-[520px] font-body-16px-regular text-neutral-70">
+              {item.description}
+            </p>
+          </Reveal>
         </li>
       ))}
     </ul>

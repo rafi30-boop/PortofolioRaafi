@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { CertificateItem } from "@/lib/types";
 import { ArrowUpRight } from "@/components/icons";
+import { Reveal } from "@/components/Reveal";
 
 interface CertificatesProps {
   certificates: CertificateItem[];
@@ -33,11 +34,10 @@ export const Certificates = ({ certificates }: CertificatesProps) => {
       </header>
 
       <ul className="grid w-full max-w-[1056px] grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {certificates.map((certificate) => (
-          <li
-            key={certificate.title}
-            className="group flex flex-col overflow-hidden rounded-3xl border border-neutral-20 transition-shadow hover:shadow-[0_12px_20px_0_rgba(0,0,0,0.12)]"
-          >
+        {certificates.map((certificate, index) => (
+          <li key={certificate.title}>
+            <Reveal delay={Math.min(index * 80, 320)} className="h-full">
+              <div className="group flex h-full flex-col overflow-hidden rounded-3xl border border-neutral-20 transition-shadow hover:shadow-[0_12px_20px_0_rgba(0,0,0,0.12)]">
             <Link
               href={`/certificates/${certificate.slug}`}
               aria-label={`View certificate: ${certificate.title}`}
@@ -86,6 +86,8 @@ export const Certificates = ({ certificates }: CertificatesProps) => {
                 <ArrowUpRight className="!relative !h-5 !w-5" />
               </span>
             </div>
+            </div>
+          </Reveal>
           </li>
         ))}
       </ul>
