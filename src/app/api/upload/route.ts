@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { promises as fs } from "fs";
 import path from "path";
 import { isAuthorized } from "@/lib/auth";
+import { commitFile, githubEnabled } from "@/lib/github";
 
 export const runtime = "nodejs";
 
@@ -39,12 +40,24 @@ export async function POST(request: Request) {
       );
     }
 
-    const uploadsDir = path.join(process.cwd(), "public", "uploads");
-    await fs.mkdir(uploadsDir, { recursive: true });
-
     const safeName = file.name.replace(/[^a-zA-Z0-9._-]/g, "-");
     const filename = `${Date.now()}-${safeName}`;
     const buffer = Buffer.from(await file.arrayBuffer());
+
+    if (githubEnabled()) {
+      await commitFile(
+        `public/uploads/${filename}`,
+        buffer,
+        "Upload image via admin"
+      );
+      return NextResponse.json({
+        url: `/uploads/${filename}`,
+        note: "Gambar sudah di-commit ke GitHub. Akan tampil setelah deploy selesai (±1 menit).",
+      });
+    }
+
+    const uploadsDir = path.join(process.cwd(), "public", "uploads");
+    await fs.mkdir(uploadsDir, { recursive: true });
     await fs.writeFile(path.join(uploadsDir, filename), buffer);
 
     return NextResponse.json({ url: `/uploads/${filename}` });

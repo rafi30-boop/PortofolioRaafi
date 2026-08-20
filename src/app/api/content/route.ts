@@ -146,8 +146,15 @@ export async function POST(request: Request) {
 
   try {
     const content = validateContent(input);
-    await saveContent(content);
-    return NextResponse.json({ ok: true });
+    const storage = await saveContent(content);
+    return NextResponse.json({
+      ok: true,
+      storage,
+      note:
+        storage === "github"
+          ? "Perubahan di-commit ke GitHub. Situs akan diperbarui otomatis dalam ±1-2 menit."
+          : undefined,
+    });
   } catch (error) {
     return NextResponse.json(
       { error: error instanceof Error ? error.message : "Invalid content." },

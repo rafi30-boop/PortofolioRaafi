@@ -115,6 +115,7 @@ export default function AdminPage() {
     "idle"
   );
   const [saveMessage, setSaveMessage] = useState("");
+  const [saveNote, setSaveNote] = useState("");
 
   const loadContent = useCallback(async () => {
     const response = await fetch("/api/content");
@@ -176,7 +177,10 @@ export default function AdminPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(content),
       });
-      const result = (await response.json()) as { error?: string };
+      const result = (await response.json()) as {
+        error?: string;
+        note?: string;
+      };
 
       if (!response.ok) {
         setSaveState("error");
@@ -185,7 +189,8 @@ export default function AdminPage() {
       }
 
       setSaveState("done");
-      setSaveMessage("Berhasil disimpan! Situs sudah diperbarui.");
+      setSaveMessage("Berhasil disimpan!");
+      setSaveNote(result.note ?? "");
     } catch {
       setSaveState("error");
       setSaveMessage("Network error. Gagal menyimpan.");
@@ -299,14 +304,21 @@ export default function AdminPage() {
           </h2>
           <div className="flex items-center gap-4">
             {saveMessage && (
-              <p
-                className={`font-body-14px-medium ${
-                  saveState === "error" ? "text-red-600" : "text-neutral-60"
-                }`}
-                role="status"
-              >
-                {saveMessage}
-              </p>
+              <div className="flex flex-col items-end gap-1">
+                <p
+                  className={`font-body-14px-medium ${
+                    saveState === "error" ? "text-red-600" : "text-neutral-60"
+                  }`}
+                  role="status"
+                >
+                  {saveMessage}
+                </p>
+                {saveNote && saveState === "done" && (
+                  <p className="font-body-14px-regular text-neutral-50">
+                    {saveNote}
+                  </p>
+                )}
+              </div>
             )}
             <button
               type="button"
