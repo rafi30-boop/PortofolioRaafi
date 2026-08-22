@@ -167,7 +167,7 @@ export const Navbar = ({ site }: NavbarProps) => {
                   key={item.label}
                   className="group animate-fade-up flex w-full items-center justify-between self-stretch rounded-sm opacity-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-0"
                   href={item.href}
-                  style={{ animationDelay: `${index * 80}ms` }}
+                  style={{ "--animation-delay": `${index * 80}ms` } as React.CSSProperties}
                   onClick={() => handleMenuNavigation(item.href)}
                 >
                   <span className="inline-flex items-baseline gap-4">
