@@ -78,7 +78,32 @@
     "NODE.JS"
   ],
   "skills": [],
-  "projects": [],
+  "projects": [
+    {
+      "slug": "finlitgo",
+      "title": "FINLITGO",
+      "category": "WEB",
+      "description": "FinLitGo adalah platform Literasi & manajemen keuangan adaptif untuk Gen Z",
+      "year": "2025-2026",
+      "image": "/uploads/1787493380731-finlitgomacbook.jpg.jpeg",
+      "gradient": "linear-gradient(135deg, #030712 0%, #1e3a8a 100%)",
+      "tech": [
+        "React",
+        "Laravel",
+        "Mysql",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Groq AI",
+        "Figma",
+        "Github",
+        "Vercel"
+      ],
+      "details": [
+        "Problem Statement Di tengah kemudahan akses fintech, e-wallet, paylater, hingga investasi digital, Gen Z Indonesia berada dalam situasi yang paradoks: akses keuangan semakin mudah, tetapi pemahaman finansial masih rendah. Banyak anak muda menggunakan produk keuangan untuk kebutuhan gaya hidup tanpa memahami manajemen risiko, pengelolaan cash flow, dan perencanaan jangka panjang. Fenomena pay later untuk konsumsi impulsif, FOMO investasi tanpa riset, hingga minimnya dana darurat menunjukkan bahwa masalahnya bukan sekadar kurang pengetahuan, tetapi pola perilaku finansial yang belum sehat. Jika dibiarkan, kondisi ini berisiko menciptakan generasi produktif yang terjebak utang, stres finansial, dan tidak siap menghadapi krisis ekonomi.  Research Questions Indikator apa yang paling valid untuk mengukur literasi keuangan Gen Z dan masyarakat umum di era layanan keuangan digital? Bagaimana sistem pembelajaran keuangan yang dipersonalisasi dapat meningkatkan pemahaman sekaligus mengubah perilaku finansial pengguna? Sejauh mana AI assistant mampu membantu pengguna dalam pengambilan keputusan keuangan sehari-hari serta meningkatkan disiplin finansial?   Latar Belakang  Perkembangan fintech di Indonesia tumbuh sangat pesat dan semakin mudah diakses oleh masyarakat, khususnya generasi muda. Berbagai layanan seperti e-wallet, paylater, investasi digital, dan pinjaman online dapat digunakan hanya dalam beberapa klik. Namun, kemudahan ini belum diimbangi dengan tingkat literasi keuangan yang memadai. Masih banyak anak muda yang menggunakan produk keuangan tanpa memahami manajemen risiko, pengelolaan arus kas, serta pentingnya perencanaan keuangan jangka panjang. Sebagian besar platform saat ini hanya menyediakan informasi edukatif yang bersifat teoritis, tetapi belum membimbing pengguna untuk mempraktikkan pengelolaan keuangan secara nyata. Akibatnya, perilaku konsumtif, penggunaan pay later tanpa perhitungan, serta minimnya dana darurat masih menjadi permasalahan umum. Kondisi ini menunjukkan perlunya sebuah platform yang tidak hanya memberikan pengetahuan, tetapi juga membantu pengguna memahami dan menerapkan literasi keuangan sesuai dengan tingkat pemahaman mereka.  Solusi yang Ditawarkan FinLitGo merupakan platform berbasis web yang dirancang untuk meningkatkan literasi sekaligus membentuk kebiasaan finansial yang sehat, khususnya bagi generasi muda di Indonesia. Platform ini menggabungkan edukasi dan praktik secara terintegrasi. Fitur utama FinLitGo meliputi: Kelas Literasi Keuangan Interaktif Platform pembelajaran yang menyediakan berbagai materi literasi keuangan yang dapat dipilih pengguna sesuai kebutuhan, dengan halaman khusus untuk setiap topik agar proses belajar lebih fokus dan terstruktur. Personalized Learning Experience Sistem penyesuaian metode belajar yang memungkinkan pengguna memilih cara belajar yang paling sesuai, seperti visual, audio, atau teks, sehingga materi lebih mudah dipahami. Financial Management Dashboard Fitur manajemen keuangan yang membantu pengguna mencatat, mengatur, dan memantau pemasukan serta pengeluaran, sehingga pengguna dapat melihat ringkasan kondisi keuangan mereka secara sederhana.  AI Financial Assistant Asisten berbasis AI yang membantu menjawab pertanyaan seputar keuangan, memberikan penjelasan konsep finansial, serta memberikan rekomendasi sederhana untuk membantu pengguna mengambil keputusan finansial yang lebih baik.  Cakupan Proyek dan Hasil Kerja  Ruang Lingkup 1. User Authentication & Account Access Sistem autentikasi pengguna untuk mengelola akses ke dalam platform. Fitur ini mencakup: Register (membuat akun baru) Login (masuk ke akun) Logout (keluar dari akun) Edit Profile (mengubah data pengguna) Fitur ini bertujuan untuk memberikan pengalaman belajar yang terpersonalisasi bagi setiap pengguna.   2. Halaman Utama (General Learning Page) Setelah berhasil login, pengguna akan diarahkan ke halaman utama yang berisi berbagai materi literasi keuangan. Pada halaman ini pengguna dapat: Melihat daftar topik atau materi literasi keuangan Memilih materi yang ingin dipelajari Mengakses konten pembelajaran secara langsung Setiap materi yang dipilih akan membawa pengguna ke halaman khusus materi tersebut, sehingga pembelajaran dapat dilakukan secara lebih fokus dan terstruktur.  3. Modul Materi Pembelajaran Platform menyediakan beberapa modul literasi keuangan yang membahas berbagai topik penting, seperti: Manajemen keuangan pribadi Pengelolaan pemasukan dan pengeluaran Dasar investasi Perencanaan keuangan Literasi finansial dasar Setiap modul akan ditampilkan pada halaman terpisah agar pengguna dapat mempelajari materi secara lebih mendalam.   4. Personalized Learning Method (Penyesuaian Cara Belajar) Pengguna dapat memilih metode belajar yang paling sesuai dengan preferensi mereka, seperti: Visual Learning → materi dalam bentuk infografis atau gambar Audio Learning → materi dalam bentuk narasi atau audio Text-Based Learning → materi dalam bentuk artikel atau teks Fitur ini bertujuan untuk meningkatkan kenyamanan dan efektivitas pembelajaran.  5. AI Financial Assistant Platform menyediakan AI Financial Assistant yang dapat membantu pengguna dalam memahami konsep keuangan. Fungsi utama fitur ini: Menjawab pertanyaan terkait keuangan Memberikan penjelasan sederhana tentang topik finansial Memberikan rekomendasi dasar terkait pengelolaan keuangan Fitur ini berperan sebagai asisten belajar interaktif bagi pengguna.   6. Financial Management Dashboard Website juga menyediakan dashboard sederhana untuk mengelola keuangan pribadi pengguna. Fitur dalam dashboard ini meliputi: Pencatatan pemasukan Pencatatan pengeluaran Ringkasan kondisi keuangan pengguna Dashboard ini bertujuan untuk membantu pengguna mempraktikkan langsung ilmu literasi keuangan yang telah dipelajari."
+      ]
+    }
+  ],
   "experiences": [],
   "educations": [],
   "certificates": []
