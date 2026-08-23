@@ -111,68 +111,7 @@
       "level": 80
     }
   ],
-  "projects": [
-    {
-      "slug": "sportly",
-      "title": "Sportly",
-      "category": "Mobile App Design",
-      "year": "2025",
-      "description": "A fitness tracking app designed to keep users motivated with clean, data-driven dashboards and a seamless workout logging flow.",
-      "image": "",
-      "gradient": "linear-gradient(135deg, #030712 0%, #1e3a8a 100%)",
-      "tech": ["React Native", "TypeScript", "UI Design"],
-      "details": [
-        "Sportly helps people build consistent workout habits. The design focuses on reducing friction between opening the app and starting a session.",
-        "Key screens include a daily activity dashboard, workout logging with drag-to-reorder sets, and a progress overview with clear visual summaries.",
-        "The visual language uses bold typography, high contrast, and motion to celebrate every completed session."
-      ]
-    },
-    {
-      "slug": "payrole",
-      "title": "Payrole",
-      "category": "Website Design",
-      "year": "2025",
-      "description": "A payroll management platform that turns complex salary data into simple, readable dashboards for HR teams.",
-      "image": "",
-      "gradient": "linear-gradient(135deg, #030712 0%, #166534 100%)",
-      "tech": ["Next.js", "TypeScript", "Tailwind CSS"],
-      "details": [
-        "Payrole was built to make payroll less intimidating. The interface organizes employees, payslips, and tax summaries into a clear workspace.",
-        "The dashboard highlights what matters: pending reviews, payroll cycles, and anomalies — all visible at a glance.",
-        "Component-driven development kept the system consistent and easy to maintain across dozens of screens."
-      ]
-    },
-    {
-      "slug": "wepay",
-      "title": "Wepay",
-      "category": "Mobile App Design",
-      "year": "2024",
-      "description": "A digital wallet concept focused on speed and trust, with a calm visual style and instant feedback on every action.",
-      "image": "",
-      "gradient": "linear-gradient(135deg, #030712 0%, #6d28d9 100%)",
-      "tech": ["Figma", "UI Design", "Prototyping"],
-      "details": [
-        "Wepay reimagines everyday payments with a minimal interface where balance, history, and actions fit on one screen.",
-        "Transaction flows are designed around quick taps: send, request, split bills, and top-up with clear confirmations.",
-        "The prototype was tested with real users to validate the flow before development."
-      ]
-    },
-    {
-      "slug": "estatery",
-      "title": "Estatery",
-      "category": "Website Design",
-      "year": "2024",
-      "description": "A property listing website that makes browsing homes feel effortless with strong imagery and fast filters.",
-      "image": "",
-      "gradient": "linear-gradient(135deg, #030712 0%, #9a3412 100%)",
-      "tech": ["React", "TypeScript", "Tailwind CSS"],
-      "details": [
-        "Estatery focuses on discovery: search, filter, and compare properties without unnecessary clicks.",
-        "Each listing page balances rich photography with essential information, keeping the user in control.",
-        "Performance was a priority — images are optimized and the interface stays responsive on every device."
-      ]
-    }
-  ],
+  "projects": [],
   "experiences": [
     {
       "role": "Frontend Developer",
@@ -222,7 +161,11 @@
         "Projects included building accessible interfaces and writing component tests with industry tools.",
         "The capstone project integrated everything into a complete, responsive application."
       ],
-      "skills": ["React", "Accessibility", "Testing"]
+      "skills": [
+        "React",
+        "Accessibility",
+        "Testing"
+      ]
     },
     {
       "slug": "javascript-algorithms-data-structures",
@@ -238,7 +181,11 @@
         "Practiced problem-solving through interactive challenges and projects.",
         "Strengthened the fundamentals that power efficient, clean code."
       ],
-      "skills": ["Algorithms", "Data Structures", "JavaScript"]
+      "skills": [
+        "Algorithms",
+        "Data Structures",
+        "JavaScript"
+      ]
     },
     {
       "slug": "google-ux-design-professional",
@@ -254,7 +201,11 @@
         "Built a portfolio of case studies using Figma and modern design systems.",
         "Emphasized inclusive design and usability testing in every project."
       ],
-      "skills": ["UX Research", "Figma", "Prototyping"]
+      "skills": [
+        "UX Research",
+        "Figma",
+        "Prototyping"
+      ]
     },
     {
       "slug": "aws-cloud-practitioner",
@@ -270,7 +221,11 @@
         "Learned about security, pricing models, and architectural best practices.",
         "Useful for deploying and scaling web applications in the cloud."
       ],
-      "skills": ["Cloud Computing", "AWS", "DevOps Basics"]
+      "skills": [
+        "Cloud Computing",
+        "AWS",
+        "DevOps Basics"
+      ]
     }
   ]
 }
