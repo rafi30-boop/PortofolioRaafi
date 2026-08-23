@@ -8,7 +8,7 @@
     "description": "Raafi Fajar is a frontend developer focused on building fast, accessible, and delightful web experiences with React, Next.js, and Tailwind CSS.",
     "email": "raafifajar892@gmail.com",
     "location": "Jakarta, Indonesia",
-    "url": "https://portofolio-raafi-oc2q.vercel.app",
+    "url": "https://portofolio-raafi-8xym.vercel.app/",
     "responseTime": "Usually replies within 24 hours",
     "socials": [
       {
@@ -80,6 +80,100 @@
   "skills": [],
   "projects": [],
   "experiences": [],
-  "educations": [],
-  "certificates": []
+  "educations": [
+    {
+      "degree": "Vocational High School — Software Engineering",
+      "school": "SMK Negeri 1",
+      "period": "2022 — 2025",
+      "description": "Focused on web and mobile development: HTML, CSS, JavaScript, UI/UX fundamentals, and software engineering practices."
+    },
+    {
+      "degree": "Self-Directed Learning",
+      "school": "Online Courses",
+      "period": "2023 — Present",
+      "description": "Continuously learning through certified courses in frontend development, algorithms, and UX design."
+    }
+  ],
+  "certificates": [
+    {
+      "slug": "meta-front-end-developer",
+      "title": "Meta Front-End Developer",
+      "issuer": "Meta",
+      "year": "2025",
+      "description": "Professional certificate covering advanced React, accessibility, testing, and front-end development practices.",
+      "credentialUrl": "",
+      "image": "",
+      "gradient": "linear-gradient(135deg, #0f172a 0%, #2563eb 100%)",
+      "details": [
+        "This program covered the full front-end spectrum: HTML, CSS, JavaScript, React, and testing.",
+        "Projects included building accessible interfaces and writing component tests with industry tools.",
+        "The capstone project integrated everything into a complete, responsive application."
+      ],
+      "skills": [
+        "React",
+        "Accessibility",
+        "Testing"
+      ]
+    },
+    {
+      "slug": "javascript-algorithms-data-structures",
+      "title": "JavaScript Algorithms and Data Structures",
+      "issuer": "freeCodeCamp",
+      "year": "2025",
+      "description": "Certified understanding of core algorithms, data structures, and functional programming in JavaScript.",
+      "credentialUrl": "",
+      "image": "",
+      "gradient": "linear-gradient(135deg, #0f172a 0%, #0d9488 100%)",
+      "details": [
+        "Covered arrays, objects, recursion, sorting, and searching algorithms in JavaScript.",
+        "Practiced problem-solving through interactive challenges and projects.",
+        "Strengthened the fundamentals that power efficient, clean code."
+      ],
+      "skills": [
+        "Algorithms",
+        "Data Structures",
+        "JavaScript"
+      ]
+    },
+    {
+      "slug": "google-ux-design-professional",
+      "title": "Google UX Design Professional",
+      "issuer": "Google",
+      "year": "2024",
+      "description": "Professional certificate in UX design: research, wireframing, prototyping, and usability testing.",
+      "credentialUrl": "",
+      "image": "",
+      "gradient": "linear-gradient(135deg, #0f172a 0%, #7c3aed 100%)",
+      "details": [
+        "Learned the complete UX process from user research to high-fidelity prototypes.",
+        "Built a portfolio of case studies using Figma and modern design systems.",
+        "Emphasized inclusive design and usability testing in every project."
+      ],
+      "skills": [
+        "UX Research",
+        "Figma",
+        "Prototyping"
+      ]
+    },
+    {
+      "slug": "aws-cloud-practitioner",
+      "title": "AWS Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "year": "2024",
+      "description": "Foundational understanding of AWS cloud concepts, services, security, and architecture best practices.",
+      "credentialUrl": "",
+      "image": "",
+      "gradient": "linear-gradient(135deg, #0f172a 0%, #d97706 100%)",
+      "details": [
+        "Gained a solid foundation in cloud computing concepts and core AWS services.",
+        "Learned about security, pricing models, and architectural best practices.",
+        "Useful for deploying and scaling web applications in the cloud."
+      ],
+      "skills": [
+        "Cloud Computing",
+        "AWS",
+        "DevOps Basics"
+      ]
+    }
+  ]
 }
