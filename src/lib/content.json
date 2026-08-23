@@ -79,26 +79,7 @@
   ],
   "skills": [],
   "projects": [],
-  "experiences": [
-    {
-      "role": "Frontend Developer",
-      "company": "Digital Agency",
-      "period": "2024 — Present",
-      "description": "Building responsive web applications with React and Next.js, collaborating with designers to ship pixel-perfect interfaces."
-    },
-    {
-      "role": "UI Designer & Developer",
-      "company": "Freelance",
-      "period": "2023 — 2024",
-      "description": "Designed and developed landing pages and dashboards for small businesses, from wireframe to production."
-    },
-    {
-      "role": "Web Development Intern",
-      "company": "Startup Inc.",
-      "period": "2023",
-      "description": "Assisted in developing internal tools and learning industry best practices in modern JavaScript development."
-    }
-  ],
+  "experiences": [],
   "educations": [
     {
       "degree": "Vocational High School — Software Engineering",
