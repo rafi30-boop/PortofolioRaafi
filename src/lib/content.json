@@ -80,20 +80,7 @@
   "skills": [],
   "projects": [],
   "experiences": [],
-  "educations": [
-    {
-      "degree": "Vocational High School — Software Engineering",
-      "school": "SMK Negeri 1",
-      "period": "2022 — 2025",
-      "description": "Focused on web and mobile development: HTML, CSS, JavaScript, UI/UX fundamentals, and software engineering practices."
-    },
-    {
-      "degree": "Self-Directed Learning",
-      "school": "Online Courses",
-      "period": "2023 — Present",
-      "description": "Continuously learning through certified courses in frontend development, algorithms, and UX design."
-    }
-  ],
+  "educations": [],
   "certificates": [
     {
       "slug": "meta-front-end-developer",
