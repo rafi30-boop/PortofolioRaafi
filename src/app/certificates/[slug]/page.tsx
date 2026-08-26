@@ -83,7 +83,7 @@ export default async function CertificatePage({
               className="w-full max-w-[1056px] font-heading-desktop-h1 text-neutral-100"
               style={{
                 fontFamily:
-                  "var(--font-inter-tight), 'Inter Tight', sans-serif",
+                  "var(--font-poppins), 'Poppins', sans-serif",
                 fontWeight: 700,
                 fontSize: "clamp(40px, 7vw, 104px)",
                 lineHeight: 1,

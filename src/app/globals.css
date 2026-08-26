@@ -15,42 +15,42 @@
   --neutral-80: rgba(31, 41, 55, 1);
   --neutral-90: rgba(17, 24, 39, 1);
 
-  --body-16px-medium-font-family: "Inter Tight", Helvetica, sans-serif;
+  --body-16px-medium-font-family: "Poppins", Helvetica, sans-serif;
   --body-16px-medium-font-size: 16px;
   --body-16px-medium-font-weight: 500;
   --body-16px-medium-letter-spacing: 0.32px;
   --body-16px-medium-line-height: 150%;
-  --body-16px-regular-font-family: "Inter Tight", Helvetica, sans-serif;
+  --body-16px-regular-font-family: "Poppins", Helvetica, sans-serif;
   --body-16px-regular-font-size: 16px;
   --body-16px-regular-font-weight: 400;
   --body-16px-regular-letter-spacing: 0.32px;
   --body-16px-regular-line-height: 150%;
-  --body-16px-semibold-font-family: "Inter Tight", Helvetica, sans-serif;
+  --body-16px-semibold-font-family: "Poppins", Helvetica, sans-serif;
   --body-16px-semibold-font-size: 16px;
   --body-16px-semibold-font-weight: 600;
   --body-16px-semibold-letter-spacing: 0.32px;
   --body-16px-semibold-line-height: 150%;
-  --body-18px-regular-font-family: "Inter Tight", Helvetica, sans-serif;
+  --body-18px-regular-font-family: "Poppins", Helvetica, sans-serif;
   --body-18px-regular-font-size: 18px;
   --body-18px-regular-font-weight: 400;
   --body-18px-regular-letter-spacing: 0.36px;
   --body-18px-regular-line-height: 150%;
-  --body-18px-semibold-font-family: "Inter Tight", Helvetica, sans-serif;
+  --body-18px-semibold-font-family: "Poppins", Helvetica, sans-serif;
   --body-18px-semibold-font-size: 18px;
   --body-18px-semibold-font-weight: 600;
   --body-18px-semibold-letter-spacing: 0.36px;
   --body-18px-semibold-line-height: 150%;
-  --body-22px-regular-font-family: "Inter Tight", Helvetica, sans-serif;
+  --body-22px-regular-font-family: "Poppins", Helvetica, sans-serif;
   --body-22px-regular-font-size: 22px;
   --body-22px-regular-font-weight: 400;
   --body-22px-regular-letter-spacing: 0.44px;
   --body-22px-regular-line-height: 130%;
-  --body-22px-semibold-font-family: "Inter Tight", Helvetica, sans-serif;
+  --body-22px-semibold-font-family: "Poppins", Helvetica, sans-serif;
   --body-22px-semibold-font-size: 22px;
   --body-22px-semibold-font-weight: 600;
   --body-22px-semibold-letter-spacing: 0.44px;
   --body-22px-semibold-line-height: 130%;
-  --body-28px-medium-font-family: "Inter Tight", Helvetica, sans-serif;
+  --body-28px-medium-font-family: "Poppins", Helvetica, sans-serif;
   --body-28px-medium-font-size: 28px;
   --body-28px-medium-font-weight: 500;
   --body-28px-medium-letter-spacing: 0.84px;
@@ -74,7 +74,7 @@
 
 @layer base {
   html {
-    font-family: var(--font-inter-tight), "Inter Tight", Helvetica,
+    font-family: var(--font-poppins), "Poppins", Helvetica,
       sans-serif;
     scroll-behavior: smooth;
     scroll-padding-top: 96px;

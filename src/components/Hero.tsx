@@ -22,7 +22,7 @@ export const Hero = ({ site }: HeroProps) => {
             className="animate-fade-up relative w-full max-w-[1056px] font-heading-desktop-h1 text-neutral-100 opacity-0 [animation-delay:100ms]"
             style={{
               fontFamily:
-                "var(--font-inter-tight), 'Inter Tight', sans-serif",
+                "var(--font-poppins), 'Poppins', sans-serif",
               fontWeight: 700,
               fontSize: "clamp(48px, 9vw, 104px)",
               lineHeight: 1,

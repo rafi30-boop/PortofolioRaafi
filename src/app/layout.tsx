@@ -1,12 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { Inter_Tight } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { getContent } from "@/lib/content";
 import { LoadingBar } from "@/components/LoadingBar";
 
-const interTight = Inter_Tight({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-inter-tight",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
   display: "swap",
 });
 
@@ -104,7 +105,7 @@ export default async function RootLayout({
   };
 
   return (
-    <html lang="en" className={interTight.variable}>
+    <html lang="en" className={poppins.variable}>
       <body className="font-sans">
         <LoadingBar />
         <script

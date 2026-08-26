@@ -207,7 +207,7 @@ export const Logo = ({
     <text
       x="34"
       y="17"
-      fontFamily="'Inter Tight', sans-serif"
+      fontFamily="'Poppins', sans-serif"
       fontWeight="700"
       fontSize="17"
       fill={color}

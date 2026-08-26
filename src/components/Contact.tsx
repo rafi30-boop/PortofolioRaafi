@@ -89,7 +89,7 @@ export const Contact = ({ site }: ContactProps) => {
             className="w-full max-w-[1056px] text-center font-heading-desktop-h1 text-neutral-100"
             style={{
               fontFamily:
-                "var(--font-inter-tight), 'Inter Tight', sans-serif",
+                "var(--font-poppins), 'Poppins', sans-serif",
               fontWeight: 700,
               fontSize: "clamp(44px, 8vw, 104px)",
               lineHeight: 1,
